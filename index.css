@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+.svg {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.logo{
+    
+}
