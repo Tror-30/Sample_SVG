@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,52 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="box">
         <svg class="svg" xmlns="http://www.w3.org/2000/svg">
-        <!-- rect:Квадрат fill:Цвет x,y:Координаты rx:Скругление(радиус общий) rx,ry:Скругление по осям-->
-            <rect width="200" height="150" fill="#123456" x="100" y="75" rx="20" ry="20"/>
+            <!-- rect:Квадрат fill:Цвет x,y:Координаты rx:Скругление(радиус общий) rx,ry:Скругление по осям-->
+            <rect width="200" height="150" fill="#123456" x="100" y="75" rx="20" ry="20" />
         </svg>
         <svg class="svg" xmlns="http://www.w3.org/2000/svg">
-        <!--circle:Круг r:Радиус cx:Ось Х cy:Ось Y-->
-            <circle r="100" ry="50" fill="gold" cx="50%" cy="50%"/>
+            <!--circle:Круг r:Радиус cx:Ось Х cy:Ось Y-->
+            <circle r="100" ry="50" fill="gold" cx="50%" cy="50%" />
         </svg>
         <svg class="svg" xmlns="http://www.w3.org/2000/svg">
-        <!--polygon:Треугольник, Многоугольник points:Координаты по часовой-->
-            <polygon points="50,50 350,50 350,250 200,250"/>
+            <!--polygon:Треугольник, Многоугольник points:Координаты по часовой-->
+            <polygon points="50,50 350,50 350,250 200,250" />
         </svg>
         <svg class="svg" xmlns="http://www.w3.org/2000/svg">
-        <!--line: x1,y1,x2,y2:Координаты strore:Цвет-->
-            <line x1="50" y1="50" x2="350" y2="250" stroke="brown"/>
+            <!--line: x1,y1,x2,y2:Координаты strore:Цвет-->
+            <line x1="50" y1="50" x2="350" y2="250" stroke="brown" />
         </svg>
         <svg class="svg" xmlns="http://www.w3.org/2000/svg">
-        <!--polyline:Многоугольник points:Последовательные Координаты stroke:Цвет strore-width:Жирность-->
-            <polyline points="50,50 50,150 150,150 150,50 250,50 250,290 300,40" stroke="orange"  fill="none" stroke-width="20"/>
+            <!--polyline:Многоугольник points:Последовательные Координаты stroke:Цвет strore-width:Жирность-->
+            <polyline points="50,50 50,150 150,150 150,50 250,50 250,290 300,40" stroke="orange" fill="none"
+                stroke-width="20" />
         </svg>
         <svg class="svg" xmlns="http://www.w3.org/2000/svg">
-        <!--ellipse:Овал rx,ry:Размер cx,cy:Координаты-->
-            <ellipse rx="100" ry="100" fill="#576546" cx="50%" cy="50%"/>
+            <!--ellipse:Овал rx,ry:Размер cx,cy:Координаты-->
+            <ellipse rx="150" ry="80" fill="#576546" cx="50%" cy="50%" />
+        </svg>
+        <!--SVG нарисован в Figma-->
+        <svg class="svg" viewBox="-40 0 400 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!--id: Для текста-->
+            <path id="1"
+                d="M128.317 81.1205C6.71705 216.321 -5.68295 103.454 3.31704 30.1205C157.65 -0.546133 432.517 -33.2795 297.317 81.1205C128.317 224.121 280.317 -87.8795 128.317 81.1205Z"
+                stroke="black" />
+            <!--Вставка текста-->
+            <text class="text">
+                    <!--тег для облигания текста по траиктории кривой-->
+                <textPath href="#1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat dolorem ex rerum corporis
+                    tempore illo esse magni ipsa, ea vero molestias quae ullam? Perspiciatis dignissimos mollitia optio sit
+                    ducimus.
+                </textPath>
+            </text>
         </svg>
         <img class="logo" src="card.svg" alt="logo">
     </div>
 </body>
+
 </html>
